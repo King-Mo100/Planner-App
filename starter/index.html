@@ -31,19 +31,32 @@
     <div class="container">
       <!-- Timeblocks go here -->
       <!-- 1. Create 9 Timeblock divs -->
-      <div class="timeblock" data-hour="9">
+      <div id = "9" class="timeblock" data-hour="9"></div>
 
-      </div>
-      <div class="timeblock" data-hour="10"></div>
-      <div class="timeblock" data-hour="11"></div>
-      <div class="timeblock" data-hour="12"></div>
-      <div class="timeblock" data-hour="13"></div>
-      <div class="timeblock" data-hour="14"></div>
-      <div class="timeblock" data-hour="15"></div>
-      <div class="timeblock" data-hour="16"></div>
+      <div class="container">
+        <div id="9am" class="row">
+          <div class="col-md-1 hour"><span id="9">9am</span></div>
+          <textarea class="col-md-10 time-block description" placeholder="Add schedule"></textarea>
+          <button class="col-md-1 saveBtn" aria-label="save button 9am">
+            <i class="fa fa-lock"></i>
+          </button>
+        </div>
 
-      ...
-      <div class="timeblock" data-hour="17"></div>
+        <div id="10am" class="row">
+          <div class="col-md-1 hour"><span id="10">10am</span></div>
+          <textarea class="col-md-10 time-block description" placeholder="Add schedule"></textarea>
+          <button class="col-md-1 saveBtn" aria-label="save button 9am">
+            <i class="fas fa-lock"></i>
+          </button>
+        </div>
+        
+        <div id="11am" class="row">
+          <div class="col-md-1 hour"><span id="11">11am</span></div>
+          <textarea class="col-md-10 time-block description" placeholder="Add schedule"></textarea>
+          <button class="col-md-1 saveBtn" aria-label="save button 9am">
+            <i class="fas fa-lock"></i>
+          </button>
+        </div>
       <!-- 2. Each timeblock need to have the time, textarea, and save button -->
       <!-- 3. Style each blocks -->
     </div>

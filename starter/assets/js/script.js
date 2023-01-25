@@ -1,10 +1,11 @@
 // 1. Show the current date at the top
 const today = moment();
 window.setInterval(function () {
-    $('#currentDay').html(moment().format('dddd, MMMM, YYYY, LTS'))
+    $('#currentDay').html(moment().format('dddd Do, MMMM YYYY, LTS'))
 }, 1000);
 //      Use moment api and format today date
 //      Add it to the `currentDay` element
+
 // 2. Colour code each block based on the current time
 //      Create variables to target each time block
 //      In the html add the data-hour which represent which hour each element is
