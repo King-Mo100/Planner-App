@@ -7,5 +7,10 @@ This weeks challenge was to create a simple calendar application, qhich would al
 # Usage
 
 
+
+
 # Link
 https://king-mo100.github.io/Planner-App/
+
+
+![Plannere-App-Preview](starter/images/scheduler-app-preview.png)
