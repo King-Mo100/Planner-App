@@ -1,7 +1,7 @@
 // 1. Show the current date at the top
 const today = moment();
 window.setInterval(function () {
-    $('#currentDay').html(moment().format('dddd Do, MMMM YYYY, LTS'))
+    $('#currentDay').html(moment().format('dddd Do, MMMM YYYY, 0LTS'))
 }, 1000);
 //      Use moment api and format today date
 //      Add it to the `currentDay` element
