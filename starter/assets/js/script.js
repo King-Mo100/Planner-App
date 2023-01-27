@@ -1,10 +1,21 @@
-// 1. Show the current date at the top
+// 1. Show the current date and time at the top
 const today = moment();
 window.setInterval(function () {
     $('#currentDay').html(moment().format('dddd Do, MMMM YYYY, 0LTS'))
 }, 1000);
-//      Use moment api and format today date
-//      Add it to the `currentDay` element
+
+
+// add event listener to the save button on click
+$('.saveBtn').on('click',function(){
+    var inputValue = $(this).siblings('.description').val();
+    var hour = $(this).parent().attr('id');
+
+
+    //save to local storage
+    localStorage.setItem(hour, inputValue);
+    
+    
+});
 
 // 2. Colour code each block based on the current time
 //      Create variables to target each time block
@@ -34,7 +45,20 @@ window.setInterval(function () {
 //              Stringify the inputs array
 //          Show feedback message to the user (optional)
 //          The feedback need to be dissappeared automatically
-//
+var tasks = {
+    "9am": [],
+    "10am": [],
+    "11am": [],
+    "12pm": [],
+    "1pm": [],
+    "2pm": [],
+    "3pm": [],
+    "4pm": [],
+    "5pm": [],
+};
+
+
+
 //      Example of inputs array format
 //      var inputs = [{
 //        time: 9,
