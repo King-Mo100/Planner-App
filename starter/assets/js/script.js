@@ -1,8 +1,8 @@
 // 1. Show the current date and time at the top
 const today = moment();
-// window.setInterval(function () {
+window.setInterval(function () {
     $('#currentDay').html(moment().format('dddd Do, MMMM YYYY, hh:mm:ss'))
-// }, 1000);
+}, 1000);
 
 
 // add event listener to the save button on click
