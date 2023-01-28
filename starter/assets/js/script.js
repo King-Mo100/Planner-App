@@ -1,7 +1,10 @@
 // 1. Show the current date and time at the top
 const today = moment();
+
 window.setInterval(function () {
-    $('#currentDay').html(moment().format('dddd Do, MMMM YYYY, hh:mm:ss'))
+    $('#currentDay').html(moment().format('dddd Do, MMMM YYYY, hh:mm:ss'));
+    currentTime = moment().hour();
+    taskedColours();
 }, 1000);
 
 
@@ -12,7 +15,11 @@ $('.saveBtn').on('click',function(){
 
 
     //save to local storage
-    localStorage.setItem(hour, inputValue);
+    localStorage.setItem('hour', inputValue);
+
+    var savedInput = localStorage.getItem('hour');
+
+    var inputValue = $(this)
     
     
 });
@@ -21,9 +28,10 @@ $('.saveBtn').on('click',function(){
     
 var taskedColours = function(){
     
-    var currentTime = moment().hour();
+    
     $('.row').each( function(){
         var time = parseInt($(this).attr('id'));
+        $(this).removeClass('past present future');
         
         if(time < currentTime){
             $(this).addClass('past');
