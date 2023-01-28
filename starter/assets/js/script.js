@@ -2,7 +2,7 @@
 const today = moment();
 
 window.setInterval(function () {
-    $('#currentDay').html(moment().format('dddd Do, MMMM YYYY, hh:mm:ss'));
+    $('#currentDay').html(moment().format('dddd Do, MMMM YYYY, 0LTS'));
 }, 1000);
 
 currentTime = moment().format('H');
@@ -15,7 +15,7 @@ $('.saveBtn').on('click',function(){
     //save to local storage
     localStorage.setItem(hour, inputValue);
 });
-
+console.log(localStorage)
 // retrieve the inputValue from local storage once page is loaded
 $(document).ready(function(){
     $('.row').each( function(){
