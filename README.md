@@ -14,4 +14,4 @@ User should then be able to log in their schedule in the present and future time
 https://king-mo100.github.io/Planner-App/
 
 
-![Plannere-App-Preview](starter/images/scheduler-app-preview.png)
+![Plannere-App-Preview](images/scheduler-app-preview.png)

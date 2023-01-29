@@ -25,6 +25,7 @@ $(document).ready(function(){
     });
 });
 
+//set the colours based on past, present and future
 var taskedColours = function(){
     $('.row').each( function(){
         var time = parseInt($(this).attr('id'));
