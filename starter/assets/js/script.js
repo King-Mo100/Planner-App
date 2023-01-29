@@ -9,7 +9,7 @@ currentTime = moment().format('H');
 
 // add event listener to the save button on click
 $('.saveBtn').on('click',function(){
-    var inputValue = $(this).siblings('.description').val();
+    var inputValue = $(this).siblings('.time-block').val();
     var hour = $(this).parent().attr('id');
 
     //save to local storage
@@ -21,7 +21,7 @@ $(document).ready(function(){
     $('.row').each( function(){
         var hour = $(this).attr('id');
         var task = localStorage.getItem(hour);
-        $(this).find('.description').val(task);
+        $(this).find('.time-block').val(task);
     });
 });
 
