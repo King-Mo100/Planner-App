@@ -15,7 +15,7 @@ $('.saveBtn').on('click',function(){
     //save to local storage
     localStorage.setItem(hour, inputValue);
 });
-console.log(localStorage)
+
 // retrieve the inputValue from local storage once page is loaded
 $(document).ready(function(){
     $('.row').each( function(){
